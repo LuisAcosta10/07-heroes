@@ -21,7 +21,7 @@ export const HeroPage = () => {
   const heroMemo = useMemo(() => getHeroById( id ), [id]);
 
 
-  console.log(hero);
+  // console.log(hero);
 
   if (!hero) {
     return <Navigate to="/Dc" />;

@@ -16,7 +16,7 @@ export const SearchPage = () => {
   const showError = (q.length > 0) && heroes.length === 0;
   // console.log(typeof {...heroes})
   // console.log(heroes[0].superhero)
-  console.log(heroes.length)
+  // console.log(heroes.length)
 
   const { searchText, onInputChange, onResetForm } = useForm({
     searchText: q
@@ -71,23 +71,23 @@ export const SearchPage = () => {
 
           {/* //* Codigo Clase bien Forma 2*/}
 
-          {/* <div className="alert alert-primary  animate__animated animate__fadeIn" style={{ display: showSearch ? '' : 'none' }}>
+          <div className="alert alert-primary  animate__animated animate__fadeIn" style={{ display: showSearch ? '' : 'none' }}>
             Search a hero
           </div>
 
           <div className="alert alert-danger  animate__animated animate__fadeIn" style={{ display: showError ? '' : 'none' }}>
             No Search a hero <b>{q}</b>
-          </div> */}
+          </div>
 
 
           {/* //* Codigo mio falta  */}
-
+{/* 
           <div hidden={(q.length > 0) && heroes.length === 0} className="alert alert-primary">
             Search a hero
           </div>
           <div hidden={q.length !== 0} className="alert alert-danger">
             No Search a hero <b>{ q }</b>
-          </div>
+          </div> */}
 
           {
             heroes.map(hero => (
